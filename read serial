@@ -1,0 +1,9 @@
+  if (Serial.available()) {
+    String inp = Serial.readString();
+    inp.replace("\r\n", "");
+    if(inp == "abc"){
+      Serial.println("got abc");
+    }
+    else{
+      Serial.println("no abc");
+    }
